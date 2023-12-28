@@ -1,0 +1,13 @@
+@for(experience of experiences; track experience.id){
+  <section class="container-xp-1">
+    <div class="background-xp">
+      <div id="date-xp">
+        <p>{{experience.date}}</p>
+      </div>
+      <div id="content-xp">
+        <h4>{{experience.title}}</h4>
+        <p [innerHTML]="experience.content"></p>
+      </div>
+    </div>
+  </section>
+}

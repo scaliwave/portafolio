@@ -1,59 +1,95 @@
 main {
   display: flex;
-  justify-content: space-between; /* Espacio entre los divs */
+  justify-content: space-between;
   margin: 60px 30px 0px;
 }
 
 .left-content {
-  flex: 1; /* Ocupa la mitad del espacio disponible */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  max-width: calc(50% - 4%); /* Mitad del ancho menos el espacio */
+  max-width: calc(40% - 4%);
+  margin-left: 6%;
 }
 
 .right-content {
-  flex: 1; /* Ocupa la mitad del espacio disponible */
-  max-width: calc(50% - 4%); /* Mitad del ancho menos el espacio */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: calc(50% - 4%);
+  margin-right: 6%;
+
 }
-/* Estilos para pantallas más pequeñas */
+
 @media screen and (max-width: 768px) {
   main {
-    flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+    flex-direction: column;
   }
 
   .left-content,
   .right-content {
-    max-width: 100%; /* Ocupar todo el ancho en dispositivos más pequeños */
-    margin-bottom: 20px; /* Espacio entre los elementos en dispositivos más pequeños */
+    max-width: 100%;
+    margin-bottom: 20px;
   }
+
+  #social-media{
+    max-width: 70%;
+  }
+
 }
 
-/* Estilos para los contenidos */
+/* Left-content */
+
 #name {
-  font-size: 4vw; /* Tamaño del texto relativo al ancho de la pantalla */
+  font-size: 42px;
   margin: 0;
+  width: 100%;
 }
 
 #profesional-title {
-  margin-top: 2vw; /* Espacio relativo al ancho de la pantalla */
-  font-size: 2.5vw; /* Tamaño del texto relativo al ancho de la pantalla */
+  margin-top: 10px;
+  font-size: 30px;
+  opacity: 0.80;
+
 }
 
 #experience-title {
-  font-size: 2vw; /* Tamaño del texto relativo al ancho de la pantalla */
-  opacity: 0.55;
-  max-width: 90%; /* Ancho máximo relativo */
+  font-size: 20px;
+  opacity: 0.5;
+
 }
 
 #my-phrase {
-  font-size: 1.5vw; /* Tamaño del texto relativo al ancho de la pantalla */
-  opacity: 0.55;
-  max-width: 90%; /* Ancho máximo relativo */
+  opacity: 0.5;
   font-style: italic;
+  text-align: justify;
+
 }
 
+.social-media-container{
+    display: flex;
+    justify-content: center;
+  }
+
 #social-media {
+  display: flex;
   margin-top: 5%;
-  background-color: #0c0f29;
+  background-color: #000;
+  opacity: 0.5;
   border-radius: 12px;
+  max-width: 100%;
+  justify-content: space-between;
+  gap: 5vw;
+  padding: 10px 5vw;
+
 }
+
+/* right-content */
+
+
+#paragraph-about{
+  opacity: 0.5;
+  padding: 0 10px;
+  margin-bottom: 80px;
+}
+

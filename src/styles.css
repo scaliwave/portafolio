@@ -1,11 +1,15 @@
 
 :root{
   color-scheme: dark;
-  background-color: #111736;
+  background-color: #090E27;
   font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 }
 body{
   margin: 0;
+  
+  p{
+    opacity: 0.5;
+  }
 }
 
