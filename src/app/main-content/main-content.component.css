@@ -1,0 +1,59 @@
+main {
+  display: flex;
+  justify-content: space-between; /* Espacio entre los divs */
+  margin: 60px 30px 0px;
+}
+
+.left-content {
+  flex: 1; /* Ocupa la mitad del espacio disponible */
+  display: flex;
+  flex-direction: column;
+  max-width: calc(50% - 4%); /* Mitad del ancho menos el espacio */
+}
+
+.right-content {
+  flex: 1; /* Ocupa la mitad del espacio disponible */
+  max-width: calc(50% - 4%); /* Mitad del ancho menos el espacio */
+}
+/* Estilos para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column; /* Cambiar a disposición de columna en pantallas más pequeñas */
+  }
+
+  .left-content,
+  .right-content {
+    max-width: 100%; /* Ocupar todo el ancho en dispositivos más pequeños */
+    margin-bottom: 20px; /* Espacio entre los elementos en dispositivos más pequeños */
+  }
+}
+
+/* Estilos para los contenidos */
+#name {
+  font-size: 4vw; /* Tamaño del texto relativo al ancho de la pantalla */
+  margin: 0;
+}
+
+#profesional-title {
+  margin-top: 2vw; /* Espacio relativo al ancho de la pantalla */
+  font-size: 2.5vw; /* Tamaño del texto relativo al ancho de la pantalla */
+}
+
+#experience-title {
+  font-size: 2vw; /* Tamaño del texto relativo al ancho de la pantalla */
+  opacity: 0.55;
+  max-width: 90%; /* Ancho máximo relativo */
+}
+
+#my-phrase {
+  font-size: 1.5vw; /* Tamaño del texto relativo al ancho de la pantalla */
+  opacity: 0.55;
+  max-width: 90%; /* Ancho máximo relativo */
+  font-style: italic;
+}
+
+#social-media {
+  margin-top: 5%;
+  background-color: #0c0f29;
+  border-radius: 12px;
+}
