@@ -5,9 +5,8 @@
   gap: 5%;
 }
 .container-xp-1 :hover{
-  background-color: rgb(0, 23, 48);
+  background-color: rgb(8, 32, 53);
   border-radius: 10px;
-  color: #49A2EB;
 }
 
 #date-xp{

@@ -55,12 +55,12 @@ main {
 
 #experience-title {
   font-size: 20px;
-  opacity: 0.5;
+  opacity: 0.6;
 
 }
 
 #my-phrase {
-  opacity: 0.5;
+  opacity: 0.6;
   font-style: italic;
   text-align: justify;
 
@@ -75,7 +75,7 @@ main {
   display: flex;
   margin-top: 5%;
   background-color: #000;
-  opacity: 0.5;
+  opacity: 0.6;
   border-radius: 12px;
   max-width: 100%;
   justify-content: space-between;
@@ -88,7 +88,7 @@ main {
 
 
 #paragraph-about{
-  opacity: 0.5;
+  opacity: 0.6;
   padding: 0 10px;
   margin-bottom: 80px;
 }

@@ -1,0 +1,13 @@
+.rayo {
+  position: absolute;
+  width: 2px; /* Ancho inicial de cada segmento */
+  height: 2px; /* Altura inicial de cada segmento */
+  background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)); /* Gradiente de color blanco a transparente */
+  pointer-events: none; /* Para que no afecte a los eventos del mouse */
+  z-index: 9999; /* Asegúrate de que esté por encima del resto de los elementos */
+  transition: opacity 0.3s ease-in-out; /* Transición para el efecto de opacidad */
+}
+
+.rayo.segmento {
+  position: absolute;
+}
